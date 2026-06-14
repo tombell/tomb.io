@@ -1,6 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tom Bell">
-  <rect width="64" height="64" rx="14" fill="#111111"/>
-  <path d="M15 18h34v7H36v23h-8V25H15z" fill="#9ece6a"/>
-  <path d="M38 30h8c5.7 0 9 3.2 9 8.3 0 5.5-3.8 8.7-10.2 8.7H30V18h8zm0 7v4h6.5c1.8 0 2.8-.7 2.8-2s-1-2-2.8-2z" fill="#9ece6a"/>
-  <path d="M38 30h2.8c1.9 0 3.1-.9 3.1-2.4S42.8 25 40.8 25H38z" fill="#111111" opacity="0.75"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TB monogram">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17202a"/>
+      <stop offset="1" stop-color="#05070a"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="12" y1="12" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b8ff7a"/>
+      <stop offset="0.55" stop-color="#7ee787"/>
+      <stop offset="1" stop-color="#35d0ba"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <path d="M3 32c8-13 19-20 33-20 9 0 17 3 25 9v43H3z" fill="#7ee787" opacity="0.05"/>
+  <rect x="5.5" y="5.5" width="53" height="53" rx="13" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <g filter="url(#shadow)" fill="url(#mark)">
+    <!-- T: broad top and shared central stem, crisp at favicon sizes -->
+    <path d="M9 15h37v8H32v27h-9V23H9z"/>
+
+    <!-- B: compact geometric bowl with a small gap from the T -->
+    <path fill-rule="evenodd" d="M39 28h7.4c6.2 0 9.6 3.2 9.6 8.2 0 2.8-1.3 5-3.5 6.2 2.8 1.2 4.5 3.6 4.5 6.8 0 5.8-4.2 9.8-10.8 9.8H39zm7.5 6.8v5.3h.7c1.9 0 3-1 3-2.7s-1.1-2.6-3-2.6zm0 11.4v6h1.4c2.1 0 3.3-1.1 3.3-3s-1.2-3-3.3-3z"/>
+  </g>
 </svg>
