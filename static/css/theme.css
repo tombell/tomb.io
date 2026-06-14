@@ -102,8 +102,7 @@ h3 { font-size: 0.95rem; }
 }
 
 .site-nav a,
-.site-footer a,
-.section-heading a {
+.site-footer a {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.85rem;
@@ -111,8 +110,7 @@ h3 { font-size: 0.95rem; }
 }
 
 .site-nav a:hover,
-.site-footer a:hover,
-.section-heading a:hover { color: var(--accent); }
+.site-footer a:hover { color: var(--accent); }
 
 .site-nav__icon {
   align-items: center;
