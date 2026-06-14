@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Description }}
+      <p>{{ . }}</p>
+    {{ else }}{{ if .IsSection }}
+      <p>Personal notes on software design, debugging, operations, tools, and what I am learning while building things.</p>
+    {{ end }}{{ end }}
+  </header>
+
+  <section class="section-block">
+    <div class="post-ledger">
+      {{ range .Paginator.Pages }}
+        {{ if eq .Kind "term" }}
+          <a class="topic topic--wide" href="{{ .RelPermalink }}">
+            <span>{{ .Title }}</span>
+            <small>{{ len .Pages }} {{ cond (eq (len .Pages) 1) "note" "notes" }}</small>
+          </a>
+        {{ else }}
+          {{ partial "post-row.html" . }}
+        {{ end }}
+      {{ else }}
+        <p class="empty-state">Nothing published here yet.</p>
+      {{ end }}
+    </div>
+
+    {{ if gt .Paginator.TotalPages 1 }}
+      <nav class="pagination" aria-label="Pagination">
+        {{ with .Paginator.Prev }}
+          <a href="{{ .URL }}">Newer</a>
+        {{ end }}
+
+        <span>Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+
+        {{ with .Paginator.Next }}
+          <a href="{{ .URL }}">Older</a>
+        {{ end }}
+      </nav>
+    {{ end }}
+  </section>
+{{ end }}

@@ -1,0 +1,34 @@
+{{ define "main" }}
+  {{ $notes := where site.RegularPages "Section" "notes" }}
+
+  <section class="hero" aria-labelledby="home-title">
+    <div>
+      <h1 id="home-title">Notes from building software.</h1>
+
+      <p>{{ site.Params.intro }}</p>
+    </div>
+
+    <aside class="hero-note" aria-label="Current focus">
+      <span>Current focus</span>
+      <p>Reliable systems, small interfaces, useful tools, and the practice of making technical work easier to reason about.</p>
+    </aside>
+  </section>
+
+  <section class="section-block" aria-labelledby="recent-title">
+    <div class="section-heading">
+      <h2 id="recent-title">Notes</h2>
+
+      {{ with site.GetPage "section" "notes" }}
+        <a href="{{ .RelPermalink }}">All notes</a>
+      {{ end }}
+    </div>
+
+    <div class="post-ledger post-ledger--home">
+      {{ range first 6 $notes }}
+        {{ partial "post-row.html" . }}
+      {{ else }}
+        <p class="empty-state">No notes yet.</p>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

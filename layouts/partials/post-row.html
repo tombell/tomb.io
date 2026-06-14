@@ -1,0 +1,21 @@
+<article class="post-row">
+  <div class="post-row__date">
+    {{ with .Date }}
+      <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006.01.02" }}</time>
+    {{ end }}
+  </div>
+
+  <div class="post-row__body">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+
+    {{ with .Description }}
+      <p>{{ . }}</p>
+    {{ else with .Summary }}
+      <p>{{ . | plainify }}</p>
+    {{ end }}
+  </div>
+
+  {{ if and (gt .ReadingTime 0) (ne .Type "about") }}
+    <div class="post-row__read">{{ .ReadingTime }} min</div>
+  {{ end }}
+</article>

@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div>
+    <strong>{{ site.Params.author | default site.Title }}</strong>
+
+    <span class="written-in">Written in {{ site.Params.location }}.</span>
+  </div>
+
+  <nav aria-label="Footer navigation">
+    {{ range site.Menus.footer }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+
+    <a href="https://gohugo.io/">Hugo</a>
+  </nav>
+</footer>

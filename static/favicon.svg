@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tom Bell">
+  <rect width="64" height="64" rx="14" fill="#111111"/>
+  <path d="M15 18h34v7H36v23h-8V25H15z" fill="#9ece6a"/>
+  <path d="M38 30h8c5.7 0 9 3.2 9 8.3 0 5.5-3.8 8.7-10.2 8.7H30V18h8zm0 7v4h6.5c1.8 0 2.8-.7 2.8-2s-1-2-2.8-2z" fill="#9ece6a"/>
+  <path d="M38 30h2.8c1.9 0 3.1-.9 3.1-2.4S42.8 25 40.8 25H38z" fill="#111111" opacity="0.75"/>
+</svg>
