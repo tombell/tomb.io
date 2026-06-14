@@ -9,8 +9,8 @@ disableKinds = ['taxonomy', 'term']
 
 [params]
   author = 'Tom Bell'
-  description = 'Personal notes on software design, programming, operations, and the engineering choices that compound over time.'
-  intro = 'I write about building software, debugging production systems, developer tools, and the small engineering choices that compound over time.'
+  description = 'Notes on software, programming, operations, and tools.'
+  intro = 'Notes on software, production, tools, and the bits in between.'
   location = 'Manchester, United Kingdom'
 
 [[menus.main]]
@@ -28,12 +28,3 @@ disableKinds = ['taxonomy', 'term']
   url = '/index.xml'
   weight = 20
 
-[[menus.footer]]
-  name = 'Notes'
-  pageRef = '/notes'
-  weight = 10
-
-[[menus.footer]]
-  name = 'Feed'
-  url = '/index.xml'
-  weight = 20

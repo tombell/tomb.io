@@ -1,4 +1,4 @@
 ---
 title: "Notes"
-description: "Personal notes on software design, debugging, operations, tools, and what I am learning while building things."
+description: "Notes on software, production, tools, and the bits in between."
 ---

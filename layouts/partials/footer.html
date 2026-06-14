@@ -1,9 +1,4 @@
 <footer class="site-footer">
-  <div>
-    <strong>{{ site.Params.author | default site.Title }}</strong>
-  </div>
-
-  <div class="site-footer__meta">
-    <span class="written-in">Written in {{ site.Params.location }}.</span>
-  </div>
+  <strong>{{ site.Params.author | default site.Title }}</strong>
+  <span>Written in {{ site.Params.location }}.</span>
 </footer>
