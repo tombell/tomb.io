@@ -1,0 +1,39 @@
+baseURL = 'https://tomb.io'
+locale = 'en_GB'
+title = 'Tom Bell'
+disableKinds = ['taxonomy', 'term']
+
+[markup]
+  [markup.highlight]
+    style = 'tokyonight-night'
+
+[params]
+  author = 'Tom Bell'
+  description = 'Personal notes on software design, programming, operations, and the engineering choices that compound over time.'
+  intro = 'I write about building software, debugging production systems, developer tools, and the small engineering choices that compound over time.'
+  location = 'Manchester, United Kingdom'
+
+[[menus.main]]
+  name = 'Notes'
+  pageRef = '/notes'
+  weight = 10
+
+[[menus.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 15
+
+[[menus.main]]
+  name = 'Feed'
+  url = '/index.xml'
+  weight = 20
+
+[[menus.footer]]
+  name = 'Notes'
+  pageRef = '/notes'
+  weight = 10
+
+[[menus.footer]]
+  name = 'Feed'
+  url = '/index.xml'
+  weight = 20
