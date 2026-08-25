@@ -117,15 +117,19 @@ h3 {
 .brand:focus-visible { color: var(--accent); }
 
 .site-nav {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .site-nav a {
+  align-items: center;
   color: var(--muted);
+  display: inline-flex;
   font-size: 0.78rem;
   font-weight: 480;
+  line-height: 15px;
   text-decoration: none;
 }
 
@@ -135,13 +139,12 @@ h3 {
 }
 
 .site-nav__link {
-  padding-bottom: 0.45rem;
   position: relative;
 }
 
 .site-nav__link::after {
   background: transparent;
-  bottom: 0;
+  bottom: -0.45rem;
   content: "";
   height: 2px;
   left: 0;
@@ -151,12 +154,6 @@ h3 {
 
 .site-nav__link.is-active::after {
   background: var(--accent);
-}
-
-.site-nav__icon {
-  align-items: center;
-  display: inline-flex;
-  line-height: 1;
 }
 
 .site-nav__icon svg {
