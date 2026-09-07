@@ -7,9 +7,9 @@
   --faint: #77726c;
   --line: #2b2d31;
   --line-strong: #474a50;
-  --accent: #eeeeee;
-  --accent-soft: rgba(238, 238, 238, 0.13);
-  --link: #cccccc;
+  --accent: #b7e66e;
+  --accent-soft: rgba(183, 230, 110, 0.13);
+  --link: #c2ec7d;
   --code-bg: #15171c;
   --code-line: #353943;
   --sans: "Atkinson Hyperlegible Mono", ui-monospace, monospace;
@@ -353,7 +353,7 @@ h3 {
 
 .article-body :not(pre) > code {
   background: var(--accent-soft);
-  border: 1px solid rgba(238, 238, 238, 0.2);
+  border: 1px solid rgba(183, 230, 110, 0.2);
   border-radius: 5px;
   color: var(--text);
   padding: 0.09rem 0.28rem;
@@ -366,7 +366,7 @@ h3 {
 }
 
 .article-body a {
-  text-decoration-color: rgba(238, 238, 238, 0.55);
+  text-decoration-color: rgba(183, 230, 110, 0.55);
 }
 
 .pagination {
