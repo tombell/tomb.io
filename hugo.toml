@@ -10,7 +10,7 @@ disableKinds = ['taxonomy', 'term']
 [params]
   author = 'Tom Bell'
   description = 'Notes on software, programming, operations, and tools.'
-  intro = 'Notes on software, production, tools, and the bits in between.'
+  intro = 'What I learn shipping code and keeping systems running.'
   location = 'Manchester, United Kingdom'
 
 [[menus.main]]
@@ -27,4 +27,3 @@ disableKinds = ['taxonomy', 'term']
   name = 'Feed'
   url = '/index.xml'
   weight = 20
-
