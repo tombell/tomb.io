@@ -261,12 +261,6 @@ h3 {
 
 .article {
   margin: 0;
-  max-width: 640px;
-}
-
-.article--page {
-  margin: 0;
-  max-width: none;
 }
 
 .article-header {
@@ -293,6 +287,27 @@ h3 {
 .article-body {
   font-size: 0.94rem;
   line-height: 1.72;
+}
+
+.article-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.article-body figure {
+  margin: 0;
+}
+
+.article-body figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.article-body figcaption p {
+  color: var(--muted);
+  margin: 0;
 }
 
 .article-body > * + * { margin-top: 1rem; }
