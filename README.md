@@ -12,13 +12,27 @@ Source for <https://tomb.io>, a Hugo static site for notes about software, progr
 
 ## Requirements
 
-Use `mise` to install the pinned Hugo version:
+### Nix
+
+With Nix installed and flakes enabled, enter the development shell:
+
+```sh
+nix develop
+```
+
+The shell provides Hugo on macOS and Linux (Apple Silicon/ARM64 and x86-64). Its version is pinned by `flake.lock` and may differ from mise and CI. Run the development commands below inside the shell, or directly with `nix develop --command hugo server --buildDrafts`.
+
+To update the pinned Nix packages, run `nix flake update`.
+
+### mise
+
+Alternatively, use `mise` to install the pinned Hugo version:
 
 ```sh
 mise install
 ```
 
-The pinned local version is in `mise.toml`. The GitHub Actions workflow installs its own Hugo version for deployment.
+The pinned mise version is in `.mise.toml`. The GitHub Actions workflow installs its own Hugo version for deployment.
 
 ## Development
 
