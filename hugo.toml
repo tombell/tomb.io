@@ -12,6 +12,8 @@ disableKinds = ['taxonomy', 'term']
   description = 'Notes on software, programming, operations, and tools.'
   intro = 'What I learn shipping code and keeping systems running.'
   location = 'Manchester, United Kingdom'
+  lookingForWork = true
+  cvURL = 'https://github.com/tombell/curriculum-vitae/releases/latest/download/curriculum-vitae.pdf'
 
 [[menus.main]]
   name = 'Notes'

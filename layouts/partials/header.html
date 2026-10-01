@@ -1,5 +1,14 @@
 <header class="site-header">
-  <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="{{ site.Title }} home">{{ site.Title }}</a>
+  <div class="site-header__identity">
+    <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="{{ site.Title }} home">{{ site.Title }}</a>
+
+    {{ if site.Params.lookingForWork }}
+      <p class="work-notice">
+        <span>Currently looking for work</span>
+        <a href="{{ site.Params.cvURL }}">View my CV (PDF)</a>
+      </p>
+    {{ end }}
+  </div>
 
   <nav class="site-nav" aria-label="Main navigation">
     {{ range site.Menus.main }}
