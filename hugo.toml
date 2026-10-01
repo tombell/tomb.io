@@ -13,7 +13,7 @@ disableKinds = ['taxonomy', 'term']
   intro = 'What I learn shipping code and keeping systems running.'
   location = 'Manchester, United Kingdom'
   lookingForWork = true
-  cvURL = 'https://github.com/tombell/curriculum-vitae/releases/download/v6.0.0/curriculum-vitae.pdf'
+  cvURL = 'https://github.com/tombell/curriculum-vitae/releases/download/v7.0.0/curriculum-vitae.pdf'
 
 [[menus.main]]
   name = 'Notes'
